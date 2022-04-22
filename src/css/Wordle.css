@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;  
+  }
+
+.game-container {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-container {
+    font-family:monospace, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    width: 2000px;
+    border-bottom: solid 2px lightgray;
+}

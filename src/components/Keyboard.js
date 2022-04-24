@@ -3,8 +3,7 @@ import React from 'react'
 function Keyboard(){
     return(
         <div>
-            {/* Keyboard */}
-            <div class="keyboard-container">
+        <div class="keyboard-container">
         <div class="keyboard-row">
             <button data-key="q">q</button>
             <button data-key="w">w</button>
@@ -44,12 +43,18 @@ function Keyboard(){
             <button data-key="del" class="wide-button">Delete</button>
           </div>
     </div>
-        </div>
+        </div>      
     )
 }
 
-export default Keyboard
+export default Keyboard;
 
+const keys = document.querySelectorAll(".keyboard-row button");
 
+for (let i = 0; i < keys.length; i++) {
+    keys[i].onclick = ({ target }) => {
+      const key = target.getAttribute("data-key");
 
-
+      console.log(key);
+    };
+}
